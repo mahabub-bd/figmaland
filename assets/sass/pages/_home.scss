@@ -1,0 +1,155 @@
+/* ================ About====================*/
+
+.about {
+  padding-top: 10rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: center;
+  color: $light-text-color;
+  &__title {
+    max-width: 552px;
+    margin: 0 auto;
+  }
+  &__item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    max-width: 869px;
+    transition: 0.3s ease-in-out;
+    gap: 52px;
+    margin: 8rem auto 2rem;
+    .about__itembox-item__icon {
+      transition: 0.3s ease-in-out;
+      &:hover {
+        transform: rotate(20deg);
+      }
+    }
+    @include responsive(tablet) {
+      padding: 4rem;
+    }
+    @include responsive(tab-port) {
+      padding: 4rem;
+    }
+  }
+  &__video {
+    border-radius: 40px;
+    &__content {
+      width: 65%;
+      height: auto;
+      border-radius: 20px;
+    }
+  }
+}
+/* ================ Product====================*/
+.product {
+  color: $light-text-color;
+  padding: 13rem 28rem;
+  text-align: left;
+  @include responsive(phone) {
+    padding: 5rem 1rem;
+    text-align: center;
+  }
+  @include responsive(tablet) {
+    padding: 5rem 0rem;
+    text-align: center;
+  }
+  @include responsive(tab-port) {
+    padding: 5rem 2rem;
+  }
+  @include responsive(tab-land) {
+    padding: 5rem 3rem;
+  }
+  @include responsive(laptop) {
+    padding: 5rem 5rem;
+  }
+  .product__image {
+    margin: auto;
+    @include responsive(phone) {
+      padding: 0;
+    }
+    @include responsive(tablet) {
+      padding: 0;
+    }
+    @include responsive(tab-port) {
+      margin-top: 10rem;
+    }
+  }
+  &__2 {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+      grid-template-rows: 1fr 1fr;
+      gap: 50px 50px;
+      @include responsive(tablet) {
+        gap: 5px 5px;
+      }
+      grid-template-areas:
+        "image text "
+        "image form ";
+      @include responsive(tablet) {
+        grid-template-areas:
+          "text"
+          "image"
+          "form";
+      }
+      .image {
+        grid-area: image;
+        margin: auto;
+      }
+      .text {
+        grid-area: text;
+      }
+      .form {
+        grid-area: form;
+        margin-top: 2rem;
+        @include responsive(laptop) {
+        }
+        align-items: center;
+
+        .input {
+          margin-right: 2rem;
+          @include responsive(phone) {
+            width: 100%;
+            margin-right: 0;
+          }
+          @include responsive(tablet) {
+          }
+
+          @include responsive(tab-port) {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 2rem;
+          }
+          @include responsive(tab-land) {
+          }
+          @include responsive(laptop) {
+          }
+        }
+        .btn-subscribe {
+          text-align: center;
+          @include responsive(phone) {
+            width: 100%;
+          }
+          @include responsive(tablet) {
+          }
+
+          @include responsive(tab-port) {
+            width: 100%;
+            margin-right: 0;
+          }
+          @include responsive(tab-land) {
+          }
+          @include responsive(laptop) {
+          }
+        }
+      }
+    }
+  }
+}
+
+/* ================ Review ====================*/
+
+/* ================ Review ====================*/
+
+/* ================ Download====================*/
+
+/* ================ Download====================*/

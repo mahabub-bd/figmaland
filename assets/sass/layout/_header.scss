@@ -1,0 +1,64 @@
+#home {
+  height: 100vh;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(9, 151, 255, 0.56) 100%
+    ),
+    url(../../../assets/img/hero-png.png);
+
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 50% 100%, 0 80%);
+  @include responsive(phone) {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 50% 100%, 0 85%);
+    height: 90vh;
+  }
+  @include responsive(tablet) {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 50% 100%, 0 85%);
+    height: 90vh;
+  }
+  @include responsive(tab-port) {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 50% 100%, 0 85%);
+    height: 90vh;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: $light-text-color;
+    margin: 0 auto;
+    &__content {
+      padding: 10rem 5rem 0;
+
+      @include responsive(laptop) {
+        padding: 5rem 5rem 0;
+      }
+      @include responsive(tab-land) {
+        padding: 0;
+      }
+      @include responsive(tab-port) {
+        padding: 4rem 2rem 0;
+      }
+      @include responsive(tablet) {
+        padding: 0 4rem;
+      }
+      @include responsive(phone) {
+        padding: 2rem;
+      }
+      text-align: center;
+
+      &__text {
+        max-width: 826px;
+      }
+      h1 {
+        padding: 2rem 2rem 0;
+        @include responsive(phone) {
+          padding: 2rem;
+        }
+      }
+    }
+  }
+}

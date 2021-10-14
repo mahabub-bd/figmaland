@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Figma Land | Landing Page</title>
+</head>
+
+<body>
+    <!-- ===================== Header ====================== -->
+    <header id="home">
+
+        <!-- ===================== Navbar====================== -->
+        <nav class="nav container">
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#product" class="nav__link">Product</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#pricing" class="nav__link">Pricing</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav__logo">
+                <a href="#" class="logo"><img src="assets/icon/logo.svg" alt=""></a>
+            </div>
+            <div class="nav__icon">
+                <ul>
+                    <li><a href=""><img src="assets/icon/twitter.svg" alt=""></a></li>
+                    <li><a href=""><img src="assets/icon/facebook.svg" alt=""></a></li>
+                    <li><a href=""><img src="assets/icon/linkedin.svg" alt=""></a></li>
+                </ul>
+            </div>
+            <div id="toggle">
+                <span onclick="openNav()">
+                    <img src="assets/icon/navicon.svg" alt="#"></span>
+            </div>
+
+            <div id="myNav" class="overlay" style="width: 0px">
+                <a href="javascript:void()" class="close-btn" onclick="closeNav()"><img src="assets/icon/navicon.svg"
+                        alt="#"></a>
+                <div class="overlay__content">
+
+                    <a href="#home" onclick="closeNav()">HOME</a>
+                    <a href="#features" onclick="closeNav()">Product</a>
+                    <a href="#tesimonial" onclick="closeNav()">Pricing</a>
+                    <a href="#howto" onclick="closeNav()">About</a>
+                    <a href="#download" onclick="closeNav()">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="hero ">
+                <div class="hero__content">
+                    <div class="hero__content__text mb-6">
+                        <h1 class="heading__primary">The best products start with Figma</h1>
+                        <p class="paragraph__hero">Most calendars are designed for teams. Slate is designed for
+                            freelancers
+                        </p>
+
+                    </div>
+                    <a href="#" class="btn btn-hero">Try For Free</a>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- ===================== Header ====================== -->
+    <!-- ===================== About Section ====================== -->
+    <section id="about" class="about">
+        <div class="abouts__title">
+            <h2 class="h2">Feature</h2>
+            <p class="h4">Most calendars are designed for teams. Slate is designed for
+                freelancers</p>
+        </div>
+        <div class="about__item">
+            <div class="about__item-item">
+                <img class="about__itembox-item__icon mb-1-76" src="assets/icon/dwowing.svg" alt="">
+                <h3 class="h3  mb-1">OpenType features
+                    Variable fonts</h3>
+                <p class=" paragraph">Slate helps you see how
+                    many more days you need
+                    to work to reach your
+                    financial goal.</p>
+            </div>
+            <div class="about__itembox-item ">
+                <img class="about__itembox-item__icon mb-1-76" src=" assets/icon/drow-2.svg" alt="">
+                <h3 class="h3  mb-1">Design with real data</h3>
+                <p class="paragraph">Slate helps you see how
+                    many more days you need
+                    to work to reach your
+                    financial goal.</p>
+            </div>
+            <div class="about__itembox-item ">
+                <img class="about__itembox-item__icon mb-1-76" src="assets/icon/brush.svg" alt="">
+                <h3 class="h3  mb-1">Fastest way to take action</h3>
+                <p class="paragraph ">Slate helps you see how
+                    many more days you need
+                    to work to reach your
+                    financial goal.</p>
+            </div>
+        </div>
+        <div class="about__video mt-10 pb-5">
+            <video class="about__video__content" autoplay="" muted="" loop=""
+                src="assets/img/Online Video Stock Video Footage - 4K and HD Video Clips.webm"></video>
+        </div>
+
+    </section>
+    <!-- ===================== About Section ====================== -->
+    <!-- ===================== Product Section ====================== -->
+    <section id="product" class="product">
+        <div class="row pb-5 product__1">
+            <div class="container ">
+                <div class="col-1-of-2">
+                    <h4 class="h2 mb-1-76">Fastest way to organize</h4>
+                    <p class="h4">Most calendars are designed for teams.
+                        Slate is designed for freelancers</p>
+                    <a href="#" class="btn btn-about h3 mt-7-6">Try For Free</a>
+                </div>
+                <div class="col-1-of-2">
+                    <img class="product__image" src="assets/img/@ Macbook Pro.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="row product__2 ">
+            <div class="container  ">
+                <div class=" image">
+                    <img class="product__image" src="assets/img/undraw_newsletter_vovu.png" alt="">
+                </div>
+                <div class="text mb-3">
+                    <h4 class="h2 mb-1-76">Fastest way to organize</h4>
+                    <p class="h4">Most calendars are designed for teams.
+                        Slate is designed for freelancers</p>
+
+                </div>
+
+                <div class="form mb-3">
+                    <input class="btn btn-form input" type="email" placeholder="Your Email">
+                    <a href="#" class="btn btn-subscribe h3 ">Subscribe</a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
