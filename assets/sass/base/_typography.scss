@@ -1,9 +1,8 @@
 body {
   font-family: $font-graphik;
-
   max-width: 1814px;
-  overflow-x: hidden;
   margin: 0 auto;
+  overflow-x: hidden;
   background: $background-color-dark;
 }
 
@@ -57,7 +56,7 @@ body {
   font-weight: $font-regular;
   line-height: 40px;
   @include responsive(tablet) {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 .h5 {

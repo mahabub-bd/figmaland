@@ -300,8 +300,6 @@ ORDER : Base + Typography > Genaral Layout + Grid > Page Layout  > Components
 html {
   background: #ffffff;
   scroll-behavior: smooth;
-  max-width: 1920px;
-  overflow-x: hidden;
   font-size: 62.5%;
   font-family: "Graphik"; }
   @media only screen and (max-width: 75em) {
@@ -333,12 +331,16 @@ ul {
 .container {
   max-width: 1440px;
   margin: 0 auto; }
+  @media only screen and (min-width: 121em) {
+    .container {
+      max-width: 1440px;
+      margin: 0 auto; } }
 
 body {
   font-family: "Graphik";
   max-width: 1814px;
-  margin: 0 auto;
   overflow-x: hidden;
+  margin: 0 auto;
   background: #252b42; }
 
 .h1 {
@@ -389,7 +391,7 @@ body {
   line-height: 40px; }
   @media only screen and (max-width: 46em) {
     .h4 {
-      font-size: 1.8rem; } }
+      font-size: 2rem; } }
 
 .h5 {
   font-size: 1.6rem;
@@ -895,7 +897,6 @@ body {
 
 /* ================ About====================*/
 .about {
-  overflow-x: hidden;
   padding-top: 10rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -903,15 +904,21 @@ body {
   color: #ffffff; }
   .about__item {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
     max-width: 869px;
     transition: 0.3s ease-in-out;
-    gap: 50px;
+    gap: 52px;
     margin: 8rem auto 2rem; }
     .about__item .about__itembox-item__icon {
       transition: 0.3s ease-in-out; }
       .about__item .about__itembox-item__icon:hover {
         transform: rotate(20deg); }
+    @media only screen and (max-width: 46em) {
+      .about__item {
+        padding: 4rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .about__item {
+        padding: 4rem; } }
   .about__video {
     border-radius: 40px; }
     .about__video__content {
@@ -1045,7 +1052,7 @@ body {
   padding: 5rem; }
   @media only screen and (max-width: 36em) {
     .pricing {
-      padding: 1rem; } }
+      padding: 0; } }
   .pricing .container {
     display: grid;
     max-width: 1120px;
@@ -1082,8 +1089,4 @@ body {
 /* ================ Contact ====================*/
 .contact {
   text-align: center;
-  color: #ffffff;
-  padding: 5rem; }
-  @media only screen and (max-width: 36em) {
-    .contact {
-      padding: 1rem; } }
+  color: #ffffff; }

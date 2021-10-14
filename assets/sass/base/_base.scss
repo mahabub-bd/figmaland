@@ -10,6 +10,8 @@
 html {
   background: #ffffff;
   scroll-behavior: smooth;
+  max-width: 1920px;
+  overflow-x: hidden;
   font-size: 62.5%;
   font-family: $font-graphik;
   @include responsive(tab-land) {
@@ -42,8 +44,4 @@ ul {
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  @include responsive(big-desktop) {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
 }

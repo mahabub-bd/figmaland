@@ -1,6 +1,7 @@
 /* ================ About====================*/
 
 .about {
+  overflow-x: hidden;
   padding-top: 10rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -9,22 +10,16 @@
 
   &__item {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
     max-width: 869px;
     transition: 0.3s ease-in-out;
-    gap: 52px;
+    gap: 50px;
     margin: 8rem auto 2rem;
     .about__itembox-item__icon {
       transition: 0.3s ease-in-out;
       &:hover {
         transform: rotate(20deg);
       }
-    }
-    @include responsive(tablet) {
-      padding: 4rem;
-    }
-    @include responsive(tab-port) {
-      padding: 4rem;
     }
   }
   &__video {
@@ -199,7 +194,7 @@
   color: $light-text-color;
   padding: 5rem;
   @include responsive(phone) {
-    padding: 0;
+    padding: 1rem;
   }
 
   .container {
@@ -242,3 +237,12 @@
 }
 
 /* ================ Pricing====================*/
+/* ================ Contact ====================*/
+.contact {
+  text-align: center;
+  color: $light-text-color;
+  padding: 5rem;
+  @include responsive(phone) {
+    padding: 1rem;
+  }
+}
