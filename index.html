@@ -15,7 +15,7 @@
     <header id="home">
 
         <!-- ===================== Navbar====================== -->
-        <nav class="nav container">
+        <nav class="nav">
 
             <div class="nav__menu">
                 <ul class="nav__list">
@@ -53,15 +53,15 @@
             </div>
 
             <div id="myNav" class="overlay" style="width: 0px">
-                <a href="javascript:void()" class="close-btn" onclick="closeNav()"><img src="assets/icon/navicon.svg"
-                        alt="#"></a>
+                <a href="javascript:void()" class="close-btn" onclick="closeNav()">
+                    <img src="assets/icon/navicon.svg" alt="#"></a>
                 <div class="overlay__content">
 
                     <a href="#home" onclick="closeNav()">HOME</a>
-                    <a href="#features" onclick="closeNav()">Product</a>
-                    <a href="#tesimonial" onclick="closeNav()">Pricing</a>
-                    <a href="#howto" onclick="closeNav()">About</a>
-                    <a href="#download" onclick="closeNav()">Contact</a>
+                    <a href="#about" onclick="closeNav()">About</a>
+                    <a href="#product" onclick="closeNav()">Product</a>
+                    <a href="#pricing" onclick="closeNav()">Priceing</a>
+                    <a href="#contact" onclick="closeNav()">Contact</a>
                 </div>
             </div>
         </nav>
@@ -69,7 +69,7 @@
             <div class="hero ">
                 <div class="hero__content">
                     <div class="hero__content__text mb-6">
-                        <h1 class="heading__primary">The best products start with Figma</h1>
+                        <h1 class="h1 mt-3">The best products start with Figma</h1>
                         <p class="paragraph__hero">Most calendars are designed for teams. Slate is designed for
                             freelancers
                         </p>
@@ -80,11 +80,15 @@
             </div>
         </div>
 
+        <!-- ===================== Go to top  ====================== -->
+        <button onclick="topScroll()" id="scrollUp" title="Go to top" style="display: none">
+            <img src="./assets/icon/arrow.svg" alt="" />
+        </button>
     </header>
     <!-- ===================== Header ====================== -->
     <!-- ===================== About Section ====================== -->
     <section id="about" class="about">
-        <div class="abouts__title">
+        <div class="abouts__title text-content">
             <h2 class="h2">Feature</h2>
             <p class="h4">Most calendars are designed for teams. Slate is designed for
                 freelancers</p>
@@ -128,7 +132,8 @@
         <div class="row pb-5 product__1">
             <div class="container ">
                 <div class="col-1-of-2">
-                    <h4 class="h2 mb-1-76">Fastest way to organize</h4>
+
+                    <h4 class="h2 mb-1-76"> Fastest way to organize</h4>
                     <p class="h4">Most calendars are designed for teams.
                         Slate is designed for freelancers</p>
                     <a href="#" class="btn btn-about h3 mt-7-6">Try For Free</a>
@@ -145,9 +150,10 @@
                     <img class="product__image" src="assets/img/undraw_newsletter_vovu.png" alt="">
                 </div>
                 <div class="text mb-3">
-                    <h4 class="h2 mb-1-76">Fastest way to organize</h4>
-                    <p class="h4">Most calendars are designed for teams.
-                        Slate is designed for freelancers</p>
+                    <p class="h3">At your fingertips</p>
+                    <h4 class="h2 mb-1-76">Lightning fast prototyping</h4>
+                    <p class="h3">Subscribe our newsletter</p>
+                    <p class="paragraph">Available exclusivery on Figmaland</p>
 
                 </div>
 
@@ -158,9 +164,275 @@
 
             </div>
         </div>
+        <div class="row brand ">
+            <div class="container  ">
+                <div class="brand__text">
+                    <h2 class="h2 mb-1-76">Partners</h2>
+                    <p class="h4 ">Most calendars are designed for teams.
+                        Slate is designed for freelancers</p>
+                </div>
+                <div class="brand__icon mt-10">
+
+                    <div class="brand__icon__item">
+                        <img src="assets/icon/Airtable_logo.svg" alt="">
+                    </div>
+                    <div class="brand__icon__item">
+                        <img src="assets/icon/Ray-Ban_logo.svg" alt="">
+                    </div>
+                    <div class="brand__icon__item">
+                        <img src="assets/icon/Dunkin_logo.svg" alt="">
+                    </div>
+                    <div class="brand__icon__item">
+                        <img src="assets/icon/Airbnb_logo.svg" alt="">
+                    </div>
+                    <div class="brand__icon__item">
+                        <img src="assets/icon/Delta_logo.svg" alt="">
+                    </div>
+                    <div class="brand__icon__item">
+                        <img src="assets/icon/Gillette_logo.svg" alt="">
+                    </div>
+                    <div class="brand__icon__item">
+                        <img src="assets/icon/PayPal_logo.svg" alt="">
+                    </div>
+                    <div class="brand__icon__item">
+                        <img src="assets/icon/Microsoft_logo.svg" alt="">
+                    </div>
+                </div>
+                <a href="#" class="btn btn-about mt-10 h3">Try For Free</a>
+            </div>
+        </div>
 
     </section>
+    <!-- ===================== Product Section ====================== -->
+    <!-- ===================== Testimonial Section ====================== -->
+    <section id="testimonial" class="testimonial">
+        <div class="row">
+
+            <h2 class="h2 mb-1-76">Testimonials</h2>
+            <div class="glide glide--carousel">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <!-- Slide 1 -->
+                        <li class="glide__slide">
+                            <div class="testimonial__client">
+                                <img src="assets/icon/twitter.svg" alt="">
+                                <p class="testimonial__client__message h4 mt-2">
+                                    Most calendars are designed for teams. Slate is designed for freelancers
+                                    who want a simple way to plan their schedule.
+                                </p>
+                                <div class="testimonial__client__info">
+                                    <img src="assets/img/user.png" class="testimonial_client__info-image" alt="">
+                                    <div class="testimonial_client__info-name">
+                                        <p class="Name  h4">John Doe</p>
+                                        <p class="role link">CEO</p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <!-- Slide 1 -->
+                        <!-- Slide 2 -->
+                        <li class="glide__slide">
+                            <div class="testimonial__client">
+                                <img src="assets/icon/googleicon.svg" alt="">
+                                <p class="testimonial__client__message h4 mt-2">
+                                    Most calendars are designed for teams. Slate is designed for freelancers
+                                    who want a simple way to plan their schedule.
+                                </p>
+                                <div class="testimonial__client__info">
+                                    <img src="assets/img/user.png" class="testimonial_client__info-image" alt="">
+                                    <div class="testimonial_client__info-name">
+                                        <p class="Name  h4"> Warren</p>
+                                        <p class="role link">CEO</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Slide 2 -->
+
+                        <!-- Slide 3 -->
+                        <li class="glide__slide">
+                            <div class="testimonial__client">
+                                <img src="assets/icon/aws.svg" alt="">
+                                <p class="testimonial__client__message h4 mt-2">
+                                    Most calendars are designed for teams. Slate is designed for freelancers
+                                    who want a simple way to plan their schedule.
+                                </p>
+                                <div class="testimonial__client__info">
+                                    <img src="assets/img/user.png" class="testimonial_client__info-image" alt="">
+                                    <div class="testimonial_client__info-name">
+                                        <p class="Name  h4"> Alexander</p>
+                                        <p class="role link">CTO</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Slide 3 -->
+                        <!-- Slide 4 -->
+                        <li class="glide__slide">
+                            <div class="testimonial__client">
+                                <img src="assets/icon/vs.svg" alt="">
+                                <p class="testimonial__client__message h4 mt-2">
+                                    Most calendars are designed for teams. Slate is designed for freelancers
+                                    who want a simple way to plan their schedule.
+                                </p>
+                                <div class="testimonial__client__info">
+                                    <img src="assets/img/user.png" class="testimonial_client__info-image" alt="">
+                                    <div class="testimonial_client__info-name">
+                                        <p class="Name  h4">John Doe</p>
+                                        <p class="role link">UI/UX Designer</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Slide 4 -->
+                        <!-- Slide 5 -->
+                        <li class="glide__slide">
+                            <div class="testimonial__client">
+                                <img src="assets/icon/facebook.svg" alt="">
+                                <p class="testimonial__client__message h4 mt-2">
+                                    Most calendars are designed for teams. Slate is designed for freelancers
+                                    who want a simple way to plan their schedule.
+                                </p>
+                                <div class="testimonial__client__info">
+                                    <img src="assets/img/user.png" class="testimonial_client__info-image" alt="">
+                                    <div class="testimonial_client__info-name">
+                                        <p class="Name  h4"> Richards</p>
+                                        <p class="role link">Product Designer</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Slide 5 -->
+                        <!-- Slide 6 -->
+                        <li class="glide__slide">
+                            <div class="testimonial__client">
+                                <img src="assets/icon/linkedin.svg" alt="">
+                                <p class="testimonial__client__message h4 mt-2">
+                                    Most calendars are designed for teams. Slate is designed for freelancers
+                                    who want a simple way to plan their schedule.
+                                </p>
+                                <div class="testimonial__client__info">
+                                    <img src="assets/img/user.png" class="testimonial_client__info-image" alt="">
+                                    <div class="testimonial_client__info-name">
+                                        <p class="Name  h4">John Doe</p>
+                                        <p class="role link">CEO</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <!-- Slide 6 -->
+                    </ul>
+                </div>
+
+                <div class="glide__bullets" data-glide-el="controls[nav]">
+                    <button class="glide__bullet" data-glide-dir="=0"></button>
+                    <button class="glide__bullet" data-glide-dir="=1"></button>
+                    <button class="glide__bullet" data-glide-dir="=2"></button>
+                    <button class="glide__bullet" data-glide-dir="=3"></button>
+                    <button class="glide__bullet" data-glide-dir="=4"></button>
+                    <button class="glide__bullet" data-glide-dir="=5"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===================== Testimonial Section ====================== -->
+    <!-- ===================== Priceing Section ====================== -->
+    <section id="pricing" class="pricing mt-10">
+        <div class="pricing__text text-content">
+            <h2 class="h2 mb-1-76">Partners</h2>
+            <p class="h4 ">Most calendars are designed for teams.
+                Slate is designed for freelancers</p>
+        </div>
+
+        <div class="container mt-8">
+            <div class="pricing__card  ">
+                <h1 class="pricing__card-title h3">FREE</h1>
+                <p class="pricing__card-info h5 mt-2">Organize across all
+                    apps by hand</p>
+                <div class="pricing__card__price">
+                    <h1 class="h1">O0</h1>
+                    <h1></h1>
+                    <div class="currency">
+                        <p class="h3">$</p>
+                        <p class="h6">Per Month</p>
+                    </div>
+
+
+                </div>
+                <div class="pricing__card__data mt-3">
+                    <p class="mb-1 card__list">Up to 15 user</p>
+                    <p class="mb-1 card__list">Basic Support</p>
+                    <p class="mb-1 card__list">Monthly Update</p>
+                    <p class="mb-1 card__list">24 Hour Support</p>
+                </div>
+                <a href="#" class="btn btn-card mt-5 h3">Order Now</a>
+            </div>
+
+            <div class="pricing__card card_hover ">
+                <h1 class="pricing__card-title h3">STANDART</h1>
+                <p class="pricing__card-info h5 mt-2">Organize across all
+                    apps by hand</p>
+                <div class="pricing__card__price">
+                    <h1 class="h1">99</h1>
+                    <h1></h1>
+                    <div class="currency">
+                        <p class="h3">$</p>
+                        <p class="h6">Per Month</p>
+                    </div>
+
+
+                </div>
+                <div class="pricing__card__data mt-3">
+                    <p class="mb-1 card__list">Up to 100 user</p>
+                    <p class="mb-1 card__list">Pro Support</p>
+                    <p class="mb-1 card__list">Daily Update</p>
+                    <p class="mb-1 card__list">24 Hour Support</p>
+                </div>
+                <a href="#" class="btn btn-card mt-5 h3">Order Now</a>
+            </div>
+            <div class="pricing__card  ">
+                <h1 class="pricing__card-title h3">BUSINESS</h1>
+                <p class="pricing__card-info h5 mt-2">Organize across all
+                    apps by hand</p>
+                <div class="pricing__card__price">
+                    <h1 class="h1">399</h1>
+                    <h1></h1>
+                    <div class="currency">
+                        <p class="h3">$</p>
+                        <p class="h6">Per Month</p>
+                    </div>
+                </div>
+                <div class="pricing__card__data mt-3">
+                    <p class="mb-1 card__list">Up to 1 user</p>
+                    <p class="mb-1 card__list">Basic Support</p>
+                    <p class="mb-1 card__list">Monthly Update</p>
+                    <p class="mb-1 card__list">12 Hour Support</p>
+                </div>
+                <a href="#" class="btn btn-card mt-5 h3">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="pricing__text text-content">
+            <h2 class="h2 mb-1-76">Contact Us</h2>
+            <p class="h4 ">Most calendars are designed for teams.
+                Slate is designed for freelancers</p>
+        </div>
+
+
+    </section>
+    <!-- ===================== Pricing Section ====================== -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/glide.js"></script>
+    <script src="assets/js/active.js"></script>
 </body>
 
 </html>

@@ -1,6 +1,11 @@
 //  Font
 @import "../font/font";
 // Import of partial files
+// Required Core Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.core";
+// Optional Theme Stylesheet
+@import "node_modules/@glidejs/glide/src/assets/sass/glide.theme";
+
 @import "abstracts/function";
 @import "abstracts/mixins";
 @import "abstracts/variables";

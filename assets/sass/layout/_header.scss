@@ -1,5 +1,6 @@
 #home {
   height: 100vh;
+  position: relative;
   background: linear-gradient(
       180deg,
       rgba(0, 0, 0, 0) 0%,
@@ -10,17 +11,14 @@
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 100%, 50% 100%, 0 80%);
-  @include responsive(phone) {
+
+  @include responsive(tab-port) {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 50% 100%, 0 85%);
-    height: 90vh;
+    height: 80vh;
   }
   @include responsive(tablet) {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 50% 100%, 0 85%);
-    height: 90vh;
-  }
-  @include responsive(tab-port) {
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 50% 100%, 0 85%);
-    height: 90vh;
+    height: 80vh;
   }
 
   .hero {

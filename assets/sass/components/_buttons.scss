@@ -39,7 +39,8 @@
   color: $light-text-color;
   padding: 1.6rem 6rem;
   @include responsive(phone) {
-    padding: 1rem 4.4rem;
+    padding: 1rem 4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -50,7 +51,8 @@
   padding: 1.6rem 4rem;
   @extend .btn-about;
   @include responsive(phone) {
-    padding: 1rem 4.4rem;
+    padding: 0.6rem 4.4rem;
+    font-size: 1.6rem;
   }
 }
 .btn-form {
@@ -61,11 +63,20 @@
   font-size: 2rem;
   font-family: $font-graphik;
   @include responsive(phone) {
-    padding: 1rem 4.4rem;
+    padding: 0.7rem 4.4rem;
     margin-bottom: 3rem;
+    font-size: 1.6rem;
   }
   &:focus {
     outline: none;
   }
+}
+
+.btn-card {
+  background: $color-primary;
+  color: $light-text-color;
+  padding: 1.4rem 5.8rem;
+  font-size: 1.6rem;
+  line-height: 20px;
 }
 /* ================Buttons===================*/

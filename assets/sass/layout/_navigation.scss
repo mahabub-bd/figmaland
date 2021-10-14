@@ -143,20 +143,20 @@
 
 /*==================Sticky  Menu====================*/
 .sticky {
-  position: fixed;
+  position: sticky !important;
   left: 0;
   top: 0;
   width: 100%;
   background-color: #fff;
-  z-index: 500;
+  z-index: 1500;
   box-shadow: 0 10px 30px #e6e6e6;
-  color: #d90647 !important;
+  color: #000;
   padding: 1rem 4rem;
   @include responsive(tablet) {
     padding: 2rem 4rem;
   }
   transition: 0.3s;
   a {
-    color: #d90647;
+    color: #000;
   }
 }
