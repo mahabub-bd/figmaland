@@ -1,0 +1,30 @@
+.footer {
+  margin: 5rem auto;
+  border-top: 0.2px solid $second-text-color;
+  padding-top: 5rem;
+  text-align: center;
+  &__nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__nav__item {
+    display: inline-block;
+    a {
+      color: $light-text-color;
+      font-family: Graphik;
+
+      font-weight: $font-regular;
+      font-size: 2rem;
+      line-height: 28px;
+      letter-spacing: 0.2px;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    &:not(:last-child) {
+      margin-right: 2.1rem;
+    }
+  }
+}

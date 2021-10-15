@@ -27,8 +27,8 @@ window.onscroll = function () {
 }
 /* Functional Sticky Navbar */
 const navbar = document.querySelector("nav");
-const services = document.querySelector("#about");
-const sticky = services.offsetTop;
+const about = document.querySelector("#about");
+const sticky = about.offsetTop;
 
 
 function navSticky() {

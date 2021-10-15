@@ -1,7 +1,6 @@
 /* ================ About====================*/
 
 .about {
-  overflow-x: hidden;
   padding-top: 10rem;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -104,19 +103,8 @@
         }
         align-items: center;
 
-        .input {
-          margin-right: 2rem;
-
-          @include responsive(tab-port) {
-            width: 100%;
-            margin-right: 0;
-            margin-bottom: 2rem;
-          }
-
-          @include responsive(phone) {
-            width: 70%;
-            margin-right: 0;
-          }
+        ::placeholder {
+          font-size: 2rem;
         }
         .btn-subscribe {
           text-align: center;
@@ -245,4 +233,32 @@
   @include responsive(phone) {
     padding: 1rem;
   }
+  &__container {
+    max-width: 1228px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__info {
+    border-radius: 10px;
+    &__wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      padding: 0 2rem;
+    }
+  }
+  &__map {
+    border-radius: 20px;
+    .iframe {
+      @include responsive(tablet) {
+        width: 30%;
+      }
+    }
+  }
+}
+.contact__info__social {
+  display: flex;
+  justify-content: space-around;
+  max-width: 180px;
+  margin-left: auto;
+  margin-right: auto;
 }
