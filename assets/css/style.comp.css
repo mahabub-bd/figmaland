@@ -417,6 +417,9 @@ body {
 /* ======== margin Top============ */
 .mt-10 {
   margin-top: 10rem; }
+  @media only screen and (max-width: 46em) {
+    .mt-10 {
+      margin-top: 4rem; } }
 
 .mt-8 {
   margin-top: 8rem; }

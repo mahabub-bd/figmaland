@@ -1,6 +1,9 @@
 /* ======== margin Top============ */
 .mt-10 {
   margin-top: 10rem;
+  @include responsive(tablet) {
+    margin-top: 4rem;
+  }
 }
 .mt-8 {
   margin-top: 8rem;
