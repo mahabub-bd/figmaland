@@ -1168,19 +1168,21 @@ body {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
       padding: 0 2rem; }
-  .contact__map {
-    border-radius: 20px;
-    width: fit-content; }
-    @media only screen and (max-width: 36em) {
-      .contact__map {
-        width: 80%; } }
-    @media only screen and (max-width: 36em) {
-      .contact__map iframe {
-        width: 80%; } }
-
-.contact__info__social {
-  display: flex;
-  justify-content: space-around;
-  max-width: 180px;
-  margin-left: auto;
-  margin-right: auto; }
+    .contact__info__map {
+      overflow-x: hidden;
+      padding-bottom: 56.25%;
+      position: relative;
+      height: 0;
+      border-radius: 20px; }
+      .contact__info__map iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute; }
+  .contact .contact__info__social {
+    display: flex;
+    justify-content: space-around;
+    max-width: 180px;
+    margin-left: auto;
+    margin-right: auto; }
