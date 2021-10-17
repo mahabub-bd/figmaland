@@ -248,10 +248,9 @@
   }
   &__map {
     border-radius: 20px;
-    .iframe {
-      @include responsive(tablet) {
-        width: 30%;
-      }
+    width: fit-content;
+    @include responsive(phone) {
+      width: 80%;
     }
   }
 }
