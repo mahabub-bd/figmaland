@@ -626,7 +626,8 @@ body {
       line-height: 28px;
       letter-spacing: 0.2px; }
       .footer__nav__item a:hover {
-        opacity: 0.8; }
+        opacity: 0.8;
+        border-bottom: 2px solid #ffffff; }
     .footer__nav__item:not(:last-child) {
       margin-right: 2.1rem; }
 
@@ -791,19 +792,6 @@ body {
         .nav .overlay__content a:hover {
           opacity: 0.8; }
 
-/*==================Sticky  Menu====================*/
-.sticky {
-  position: fixed !important;
-  left: 0;
-  top: 0;
-  width: 100%;
-  background-color: #fff;
-  z-index: 5500;
-  box-shadow: 0 10px 30px #e6e6e6;
-  color: #33cc66 !important;
-  padding: 1rem 4rem;
-  transition: 0.3s; }
-
 #home {
   height: 100vh;
   position: relative;
@@ -851,6 +839,51 @@ body {
         @media only screen and (max-width: 36em) {
           #home .hero__content h1 {
             padding: 2rem; } }
+
+#scrollUp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #2091f9;
+  border: none;
+  outline: none;
+  box-shadow: 0 1px 2px #2dc071;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%; }
+  @media only screen and (max-width: 36em) {
+    #scrollUp {
+      width: 25px;
+      height: 25px;
+      font-size: 0.2rem; } }
+
+/*==================Sticky  Menu====================*/
+.sticky {
+  position: fixed !important;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 5000;
+  box-shadow: 0 10px 30px #e6e6e6;
+  color: #2091f9 !important;
+  padding: 1rem 4rem;
+  transition: 0.3s; }
+  @media only screen and (max-width: 46em) {
+    .sticky {
+      padding: 1rem 4rem; } }
+  @media only screen and (max-width: 75em) {
+    .sticky {
+      padding: 1rem 4rem; } }
+  .sticky a {
+    color: #2091f9; }
+    .sticky a:hover {
+      opacity: 0.8; }
+  .sticky .nav__item a {
+    color: #2091f9 !important; }
+  .sticky .btn-nav {
+    background: #2091f9;
+    color: #fff; }
 
 /*==================Nav====================*/
 .nav {
@@ -960,19 +993,6 @@ body {
             font-size: 4rem; } }
         .nav .overlay__content a:hover {
           opacity: 0.8; }
-
-/*==================Sticky  Menu====================*/
-.sticky {
-  position: fixed !important;
-  left: 0;
-  top: 0;
-  width: 100%;
-  background-color: #fff;
-  z-index: 5500;
-  box-shadow: 0 10px 30px #e6e6e6;
-  color: #33cc66 !important;
-  padding: 1rem 4rem;
-  transition: 0.3s; }
 
 /* ================ About====================*/
 .about {
@@ -1183,6 +1203,6 @@ body {
   .contact .contact__info__social {
     display: flex;
     justify-content: space-around;
-    max-width: 180px;
+    max-width: 140px;
     margin-left: auto;
     margin-right: auto; }

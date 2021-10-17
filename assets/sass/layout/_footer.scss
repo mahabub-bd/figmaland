@@ -21,6 +21,7 @@
       letter-spacing: 0.2px;
       &:hover {
         opacity: 0.8;
+        border-bottom: 2px solid $light-text-color;
       }
     }
     &:not(:last-child) {

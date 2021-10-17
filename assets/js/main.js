@@ -12,6 +12,7 @@ topBtn = document.getElementById("scrollUp")
 function scroll() {
     if (document.body.scrollTop > sticky || document.documentElement.scrollTop > sticky) {
         topBtn.style.display = "block";
+        console.log("ok");
     }
     else { topBtn.style.display = "none"; }
 }
@@ -27,8 +28,8 @@ window.onscroll = function () {
 }
 /* Functional Sticky Navbar */
 const navbar = document.querySelector("nav");
-const about = document.querySelector("#about");
-const sticky = about.offsetTop;
+const services = document.querySelector("#about");
+const sticky = services.offsetTop;
 
 
 function navSticky() {
