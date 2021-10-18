@@ -346,7 +346,10 @@ body {
   font-size: 7.4rem;
   line-height: 84px;
   text-align: center;
-  letter-spacing: 0.2px; }
+  letter-spacing: 0.2px;
+  animation-name: moveInLeft;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out; }
   @media only screen and (max-width: 46em) {
     .h1 {
       font-size: 5.2rem;

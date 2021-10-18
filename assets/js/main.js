@@ -12,7 +12,6 @@ topBtn = document.getElementById("scrollUp")
 function scroll() {
     if (document.body.scrollTop > sticky || document.documentElement.scrollTop > sticky) {
         topBtn.style.display = "block";
-        console.log("ok");
     }
     else { topBtn.style.display = "none"; }
 }

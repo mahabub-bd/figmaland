@@ -13,6 +13,7 @@ body {
   line-height: 84px;
   text-align: center;
   letter-spacing: 0.2px;
+  @include animation(moveInLeft, 1.5s, ease-in-out);
 
   @include responsive(tablet) {
     font-size: 5.2rem;
