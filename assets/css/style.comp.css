@@ -484,12 +484,16 @@ body {
 .btn-hero {
   background: #ffffff;
   padding: 1.6rem 6.4rem;
+  animation-name: moveInBottom;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+  animation-delay: 0.7s;
+  animation-fill-mode: backwards;
   color: #2091f9;
   text-align: center;
   transition: 0.3s ease-in-out;
   font-size: 2rem;
   letter-spacing: 0.2px;
-  /* Light background */
   border-radius: 3.5rem;
   margin: 0 auto; }
   @media only screen and (max-width: 36em) {
@@ -526,7 +530,7 @@ body {
   background: #f4f4f4;
   color: #ffffff;
   border: 1px solid #e8e8e8;
-  padding: 1.4rem 4rem;
+  padding: 1.6rem 4rem;
   border-radius: 39px;
   font-size: 2rem;
   font-family: "Graphik"; }
@@ -538,19 +542,28 @@ body {
   .btn-form:focus {
     outline: none; }
 
-.btn-card, .btn-form {
+.btn-card, .btn-form, .btn-send {
   background: #2091f9;
   color: #ffffff;
   padding: 1.4rem 5.8rem;
   font-size: 1.6rem;
   line-height: 20px; }
   @media only screen and (max-width: 36em) {
-    .btn-card, .btn-form {
+    .btn-card, .btn-form, .btn-send {
       padding: 0.5rem 4rem;
       font-size: 1.6rem; } }
 
 .btn-form {
-  border: none; }
+  border: none;
+  color: #2091f9;
+  background: #ffffff; }
+
+.btn-send {
+  transition: 0.3s; }
+  .btn-send:hover {
+    transform: scale(1.05);
+    background: #ffffff;
+    color: #2091f9; }
 
 /* ================Buttons===================*/
 .contact__form {
@@ -599,8 +612,6 @@ body {
   font-size: 1.2rem; }
 
 .input {
-  color: #ffffff;
-  background: #ffffff;
   margin-right: 2rem; }
   @media only screen and (max-width: 56.25em) {
     .input {
@@ -1163,7 +1174,7 @@ body {
         border: 1px solid #2091f9;
         z-index: 1;
         transform: scale(1.05); }
-      .pricing .container .pricing__card:hover .btn-card, .pricing .container .pricing__card:hover .btn-form {
+      .pricing .container .pricing__card:hover .btn-card, .pricing .container .pricing__card:hover .btn-form, .pricing .container .pricing__card:hover .btn-send {
         background: #ffffff;
         color: #2091f9;
         transform: scale(0.95); }

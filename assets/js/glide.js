@@ -6,9 +6,10 @@
 
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-  typeof define === 'function' && define.amd ? define(factory) :
-  (global.Glide = factory());
-}(this, (function () { 'use strict';
+    typeof define === 'function' && define.amd ? define(factory) :
+      (global.Glide = factory());
+}(this, (function () {
+  'use strict';
 
   var defaults = {
     /**
@@ -883,7 +884,7 @@
     return Glide;
   }();
 
-  function Run (Glide, Components, Events) {
+  function Run(Glide, Components, Events) {
     var Run = {
       /**
        * Initializes autorunning of the glide.
@@ -944,9 +945,9 @@
        */
       calculate: function calculate() {
         var move = this.move,
-            length = this.length;
+          length = this.length;
         var steps = move.steps,
-            direction = move.direction;
+          direction = move.direction;
 
 
         var countableSteps = isNumber(toInt(steps)) && toInt(steps) !== 0;
@@ -1111,9 +1112,9 @@
    */
   function throttle(func, wait, options) {
     var timeout = void 0,
-        context = void 0,
-        args = void 0,
-        result = void 0;
+      context = void 0,
+      args = void 0,
+      result = void 0;
     var previous = 0;
     if (!options) options = {};
 
@@ -1158,7 +1159,7 @@
     rtl: ['marginRight', 'marginLeft']
   };
 
-  function Gaps (Glide, Components, Events) {
+  function Gaps(Glide, Components, Events) {
     var Gaps = {
       /**
        * Applies gaps between slides. First and last
@@ -1299,7 +1300,7 @@
 
   var TRACK_SELECTOR = '[data-glide-el="track"]';
 
-  function Html (Glide, Components) {
+  function Html(Glide, Components) {
     var Html = {
       /**
        * Setup slider HTML nodes.
@@ -1383,7 +1384,7 @@
     return Html;
   }
 
-  function Peek (Glide, Components, Events) {
+  function Peek(Glide, Components, Events) {
     var Peek = {
       /**
        * Setups how much to peek based on settings.
@@ -1453,7 +1454,7 @@
     return Peek;
   }
 
-  function Move (Glide, Components, Events) {
+  function Move(Glide, Components, Events) {
     var Move = {
       /**
        * Constructs move component.
@@ -1552,7 +1553,7 @@
     return Move;
   }
 
-  function Sizes (Glide, Components, Events) {
+  function Sizes(Glide, Components, Events) {
     var Sizes = {
       /**
        * Setups dimentions of slides.
@@ -1661,7 +1662,7 @@
     return Sizes;
   }
 
-  function Build (Glide, Components, Events) {
+  function Build(Glide, Components, Events) {
     var Build = {
       /**
        * Init glide building. Adds classes, sets
@@ -1753,7 +1754,7 @@
     return Build;
   }
 
-  function Clones (Glide, Components, Events) {
+  function Clones(Glide, Components, Events) {
     var Clones = {
       /**
        * Create pattern map and collect slides to be cloned.
@@ -1776,8 +1777,8 @@
         var items = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
         var slides = Components.Html.slides;
         var _Glide$settings = Glide.settings,
-            perView = _Glide$settings.perView,
-            classes = _Glide$settings.classes;
+          perView = _Glide$settings.perView,
+          classes = _Glide$settings.classes;
 
 
         var peekIncrementer = +!!Glide.settings.peek;
@@ -1815,8 +1816,8 @@
       append: function append() {
         var items = this.items;
         var _Components$Html = Components.Html,
-            wrapper = _Components$Html.wrapper,
-            slides = _Components$Html.slides;
+          wrapper = _Components$Html.wrapper,
+          slides = _Components$Html.slides;
 
 
         var half = Math.floor(items.length / 2);
@@ -1971,7 +1972,7 @@
     return EventsBinder;
   }();
 
-  function Resize (Glide, Components, Events) {
+  function Resize(Glide, Components, Events) {
     /**
      * Instance of the binder for DOM Events.
      *
@@ -2030,7 +2031,7 @@
     '=': '='
   };
 
-  function Direction (Glide, Components, Events) {
+  function Direction(Glide, Components, Events) {
     var Direction = {
       /**
        * Setups gap value based on settings.
@@ -2152,7 +2153,7 @@
    * @param  {Object} Components
    * @return {Object}
    */
-  function Rtl (Glide, Components) {
+  function Rtl(Glide, Components) {
     return {
       /**
        * Negates the passed translate if glide is in RTL option.
@@ -2177,7 +2178,7 @@
    * @param  {Object} Components
    * @return {Object}
    */
-  function Gap (Glide, Components) {
+  function Gap(Glide, Components) {
     return {
       /**
        * Modifies passed translate value with number in the `gap` settings.
@@ -2198,7 +2199,7 @@
    * @param  {Object} Components
    * @return {Object}
    */
-  function Grow (Glide, Components) {
+  function Grow(Glide, Components) {
     return {
       /**
        * Adds to the passed translate width of the half of clones.
@@ -2219,7 +2220,7 @@
    * @param  {Object} Components
    * @return {Object}
    */
-  function Peeking (Glide, Components) {
+  function Peeking(Glide, Components) {
     return {
       /**
        * Modifies passed translate value with a `peek` setting.
@@ -2250,7 +2251,7 @@
    * @param  {Object} Components
    * @return {Object}
    */
-  function Focusing (Glide, Components) {
+  function Focusing(Glide, Components) {
     return {
       /**
        * Modifies passed translate value with index in the `focusAt` setting.
@@ -2280,7 +2281,7 @@
    * @param  {Object} Components
    * @return {Object}
    */
-  function mutator (Glide, Components, Events) {
+  function mutator(Glide, Components, Events) {
     /**
      * Merge instance transformers with collection of default transformers.
      * It's important that the Rtl component be last on the list,
@@ -2313,7 +2314,7 @@
     };
   }
 
-  function Translate (Glide, Components, Events) {
+  function Translate(Glide, Components, Events) {
     var Translate = {
       /**
        * Sets value of translate on HTML element.
@@ -2382,7 +2383,7 @@
     return Translate;
   }
 
-  function Transition (Glide, Components, Events) {
+  function Transition(Glide, Components, Events) {
     /**
      * Holds inactivity status of transition.
      * When true transition is not applied.
@@ -2542,7 +2543,7 @@
 
     window.addEventListener('testPassive', null, opts);
     window.removeEventListener('testPassive', null, opts);
-  } catch (e) {}
+  } catch (e) { }
 
   var supportsPassive$1 = supportsPassive;
 
@@ -2551,7 +2552,7 @@
   var END_EVENTS = ['touchend', 'touchcancel', 'mouseup', 'mouseleave'];
   var MOUSE_EVENTS = ['mousedown', 'mousemove', 'mouseup', 'mouseleave'];
 
-  function Swipe (Glide, Components, Events) {
+  function Swipe(Glide, Components, Events) {
     /**
      * Instance of the binder for DOM Events.
      *
@@ -2608,9 +2609,9 @@
       move: function move(event) {
         if (!Glide.disabled) {
           var _Glide$settings = Glide.settings,
-              touchAngle = _Glide$settings.touchAngle,
-              touchRatio = _Glide$settings.touchRatio,
-              classes = _Glide$settings.classes;
+            touchAngle = _Glide$settings.touchAngle,
+            touchRatio = _Glide$settings.touchRatio,
+            classes = _Glide$settings.classes;
 
 
           var swipe = this.touches(event);
@@ -2858,7 +2859,7 @@
     return Swipe;
   }
 
-  function Images (Glide, Components, Events) {
+  function Images(Glide, Components, Events) {
     /**
      * Instance of the binder for DOM Events.
      *
@@ -2919,7 +2920,7 @@
     return Images;
   }
 
-  function Anchors (Glide, Components, Events) {
+  function Anchors(Glide, Components, Events) {
     /**
      * Instance of the binder for DOM Events.
      *
@@ -3089,7 +3090,7 @@
   var NAV_SELECTOR = '[data-glide-el="controls[nav]"]';
   var CONTROLS_SELECTOR = '[data-glide-el^="controls"]';
 
-  function Controls (Glide, Components, Events) {
+  function Controls(Glide, Components, Events) {
     /**
      * Instance of the binder for DOM Events.
      *
@@ -3285,7 +3286,7 @@
     return Controls;
   }
 
-  function Keyboard (Glide, Components, Events) {
+  function Keyboard(Glide, Components, Events) {
     /**
      * Instance of the binder for DOM Events.
      *
@@ -3371,7 +3372,7 @@
     return Keyboard;
   }
 
-  function Autoplay (Glide, Components, Events) {
+  function Autoplay(Glide, Components, Events) {
     /**
      * Instance of the binder for DOM Events.
      *
@@ -3539,7 +3540,7 @@
     return {};
   }
 
-  function Breakpoints (Glide, Components, Events) {
+  function Breakpoints(Glide, Components, Events) {
     /**
      * Instance of the binder for DOM Events.
      *
