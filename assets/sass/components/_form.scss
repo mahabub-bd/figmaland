@@ -53,8 +53,6 @@
   font-size: 1.2rem;
 }
 .input {
-  color: $light-text-color;
-  background: $background-color-light;
   margin-right: 2rem;
 
   @include responsive(tab-port) {
