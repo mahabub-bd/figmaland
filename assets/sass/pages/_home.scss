@@ -134,21 +134,18 @@
     &__icon {
       text-align: center;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
       grid-template-rows: 1fr 1fr;
-      gap: 30px;
+      gap: 20px;
       justify-content: center;
       img {
         padding: 1rem;
         border: 0.1px solid #efefef;
         border-radius: 8px;
         @include responsive(tablet) {
-          width: 60%;
-
+          width: 100%;
+          gap: 10px;
           place-items: center;
-        }
-        @include responsive(tab-port) {
-          width: 60%;
         }
       }
     }

@@ -43,7 +43,7 @@
   color: $light-text-color;
   padding: 1.6rem 6rem;
   @include responsive(phone) {
-    padding: 1rem 4rem;
+    padding: 0.5rem 4rem;
     font-size: 1.6rem;
   }
 }
@@ -83,6 +83,10 @@
   padding: 1.4rem 5.8rem;
   font-size: 1.6rem;
   line-height: 20px;
+  @include responsive(phone) {
+    padding: 0.5rem 4rem;
+    font-size: 1.6rem;
+  }
 }
 .btn-form {
   @extend .btn-card;
