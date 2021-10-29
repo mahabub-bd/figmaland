@@ -29,7 +29,7 @@
     color: $light-text-color;
     margin: 0 auto;
     &__content {
-      padding: 10rem 5rem 0;
+      padding: 10rem 5rem;
 
       @include responsive(laptop) {
         padding: 2.5rem 5rem 0;
@@ -50,6 +50,9 @@
 
       &__text {
         max-width: 826px;
+        @include responsive(big-desktop) {
+          max-width: 926px;
+        }
       }
       h1 {
         padding: 2rem 2rem 0;
@@ -83,10 +86,10 @@
   left: 0;
   top: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: $background-color-dark;
   z-index: 5000;
   box-shadow: 0 10px 30px #e6e6e6;
-  color: $color-primary !important;
+  color: $light-text-color;
   padding: 1rem 4rem;
   @include responsive(tablet) {
     padding: 1rem 4rem;

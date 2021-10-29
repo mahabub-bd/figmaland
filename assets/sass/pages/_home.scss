@@ -33,7 +33,6 @@
 /* ================ Product====================*/
 .product {
   color: $light-text-color;
-  padding: 13rem 28rem;
 
   @include responsive(tab-port) {
     padding: 5rem 2rem;
@@ -134,7 +133,7 @@
     &__icon {
       text-align: center;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
       grid-template-rows: 1fr 1fr;
       gap: 20px;
       justify-content: center;

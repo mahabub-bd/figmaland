@@ -173,7 +173,6 @@ ORDER : Base + Typography > Genaral Layout + Grid > Page Layout  > Components
 
 html {
   scroll-behavior: smooth;
-  max-width: 1920px;
   overflow-x: hidden;
   font-size: 62.5%;
   font-family: "Graphik"; }
@@ -187,7 +186,7 @@ html {
       /* width<900? */
       font-size: 50%;
       /* 1 rem = 8px 8px/16px =50% */ } }
-  @media only screen and (min-width: 121em) {
+  @media only screen and (min-width: 121.5em) {
     html {
       /* width<1800+? */
       font-size: 75%;
@@ -209,7 +208,6 @@ ul {
 
 body {
   font-family: "Graphik";
-  max-width: 1920px;
   margin: 0 auto;
   overflow-x: hidden;
   background: #252b42; }
@@ -524,20 +522,20 @@ body {
       margin-right: 2.1rem; }
 
 .row {
-  max-width: 151.2rem;
+  max-width: 120rem;
   margin: 0 auto; }
-  @media only screen and (max-width: 46em) {
-    .row {
-      max-width: 56.25rem;
-      padding: 0 1rem; } }
-  @media only screen and (max-width: 56.25em) {
-    .row {
-      max-width: 75rem;
-      padding: 0 3rem; } }
   @media only screen and (max-width: 75em) {
     .row {
       max-width: 112.5rem;
       padding: 0 3rem; } }
+  @media only screen and (max-width: 56.25em) {
+    .row {
+      max-width: 75rem;
+      padding: 0 3rem; } }
+  @media only screen and (max-width: 46em) {
+    .row {
+      max-width: 56.25rem;
+      padding: 0 1rem; } }
   .row:not(:last-child) {
     margin-bottom: 8rem; }
     @media only screen and (max-width: 46em) {
@@ -707,7 +705,7 @@ body {
     color: #ffffff;
     margin: 0 auto; }
     #home .hero__content {
-      padding: 10rem 5rem 0;
+      padding: 10rem 5rem;
       text-align: center; }
       @media only screen and (max-width: 90.625em) {
         #home .hero__content {
@@ -726,6 +724,9 @@ body {
           padding: 2rem; } }
       #home .hero__content__text {
         max-width: 826px; }
+        @media only screen and (min-width: 121.5em) {
+          #home .hero__content__text {
+            max-width: 926px; } }
       #home .hero__content h1 {
         padding: 2rem 2rem 0; }
         @media only screen and (max-width: 36em) {
@@ -755,10 +756,10 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: #252b42;
   z-index: 5000;
   box-shadow: 0 10px 30px #e6e6e6;
-  color: #2091f9 !important;
+  color: #ffffff;
   padding: 1rem 4rem;
   transition: 0.3s; }
   @media only screen and (max-width: 46em) {
@@ -913,8 +914,7 @@ body {
 
 /* ================ Product====================*/
 .product {
-  color: #ffffff;
-  padding: 13rem 28rem; }
+  color: #ffffff; }
   @media only screen and (max-width: 56.25em) {
     .product {
       padding: 5rem 2rem;
@@ -988,7 +988,7 @@ body {
     .product .brand__icon {
       text-align: center;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
       grid-template-rows: 1fr 1fr;
       gap: 20px;
       justify-content: center; }
