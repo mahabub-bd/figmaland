@@ -32,6 +32,7 @@
   },
   "homepage": "https://mahabub-hossain-bd.github.io/figmaland/",
   "dependencies": {
-    "@glidejs/glide": "^3.4.1"
+    "@glidejs/glide": "^3.4.1",
+    "live-server": "^1.2.1"
   }
 }

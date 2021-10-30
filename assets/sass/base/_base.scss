@@ -9,10 +9,8 @@
 }
 html {
   scroll-behavior: smooth;
-  
   overflow-x: hidden;
   font-size: 62.5%;
-  font-family: $font-graphik;
   @include responsive(tab-land) {
     /* width<1200? */
     font-size: 56.25%; /* 1 rem = 9px 9px/16px =56.25% */
