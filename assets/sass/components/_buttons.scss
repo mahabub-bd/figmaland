@@ -51,7 +51,7 @@
 
 .btn-subscribe {
   font-size: 2rem;
-  font-family: $font-graphik;
+  font-family: $font-roboto;
   line-height: 20px;
   padding: 1.6rem 4rem;
   @extend .btn-about;
@@ -67,7 +67,7 @@
   padding: 1.6rem 4rem;
   border-radius: 39px;
   font-size: 2rem;
-  font-family: $font-graphik;
+  font-family: $font-roboto;
   @include responsive(phone) {
     padding: 0.7rem 4.4rem;
     margin-bottom: 3rem;
