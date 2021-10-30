@@ -1,195 +1,195 @@
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik Black Italic"), local("Graphik-BlackItalic"), url("Graphik-BlackItalic.woff2") format("woff2"), url("Graphik-BlackItalic.woff") format("woff");
+  src: local("Graphik Black Italic"), local("Graphik-BlackItalic"), url("../font/Graphik-BlackItalic.woff2") format("woff2"), url("../font/Graphik-BlackItalic.woff") format("woff");
   font-weight: 900;
   font-style: italic;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik Black"), local("Graphik-Black"), url("Graphik-Black.woff2") format("woff2"), url("Graphik-Black.woff") format("woff");
+  src: local("Graphik Black"), local("Graphik-Black"), url("../font/Graphik-Black.woff2") format("woff2"), url("../font/Graphik-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik Bold"), local("Graphik-Bold"), url("Graphik-Bold.woff2") format("woff2"), url("Graphik-Bold.woff") format("woff");
+  src: local("Graphik Bold"), local("Graphik-Bold"), url("../font/Graphik-Bold.woff2") format("woff2"), url("../font/Graphik-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik-Bold"), url("Graphik-Bold.woff2") format("woff2"), url("Graphik-Bold.woff") format("woff");
+  src: local("Graphik-Bold"), url("../font/Graphik-Bold.woff2") format("woff2"), url("../font/Graphik-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik-Black"), url("Graphik-Black.woff2") format("woff2"), url("Graphik-Black.woff") format("woff");
+  src: local("Graphik-Black"), url("../font/Graphik-Black.woff2") format("woff2"), url("../font/Graphik-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik-Black"), url("Graphik-Black.woff2") format("woff2"), url("Graphik-Black.woff") format("woff");
+  src: local("Graphik-Black"), url("../font/Graphik-Black.woff2") format("woff2"), url("../font/Graphik-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik-Bold"), url("Graphik-Bold.woff2") format("woff2"), url("Graphik-Bold.woff") format("woff");
+  src: local("Graphik-Bold"), url("../font/Graphik-Bold.woff2") format("woff2"), url("../font/Graphik-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik-Extralight"), url("Graphik-Extralight.woff2") format("woff2"), url("Graphik-Extralight.woff") format("woff");
+  src: local("Graphik-Extralight"), url("../font/Graphik-Extralight.woff2") format("woff2"), url("../font/Graphik-Extralight.woff") format("woff");
   font-weight: 200;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik Extralight"), local("Graphik-Extralight"), url("Graphik-Extralight.woff2") format("woff2"), url("Graphik-Extralight.woff") format("woff");
+  src: local("Graphik Extralight"), local("Graphik-Extralight"), url("../font/Graphik-Extralight.woff2") format("woff2"), url("../font/Graphik-Extralight.woff") format("woff");
   font-weight: 200;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik-Light"), url("Graphik-Light.woff2") format("woff2"), url("Graphik-Light.woff") format("woff");
+  src: local("Graphik-Light"), url("../font/Graphik-Light.woff2") format("woff2"), url("../font/Graphik-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik Bold Italic"), local("Graphik-BoldItalic"), url("Graphik-BoldItalic.woff2") format("woff2"), url("Graphik-BoldItalic.woff") format("woff");
+  src: local("Graphik Bold Italic"), local("Graphik-BoldItalic"), url("../font/Graphik-BoldItalic.woff2") format("woff2"), url("../font/Graphik-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik Extralight Italic"), local("Graphik-ExtralightItalic"), url("Graphik-ExtralightItalic.woff2") format("woff2"), url("Graphik-ExtralightItalic.woff") format("woff");
+  src: local("Graphik Extralight Italic"), local("Graphik-ExtralightItalic"), url("../font/Graphik-ExtralightItalic.woff2") format("woff2"), url("../font/Graphik-ExtralightItalic.woff") format("woff");
   font-weight: 200;
   font-style: italic;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik Light"), local("Graphik-Light"), url("Graphik-Light.woff2") format("woff2"), url("Graphik-Light.woff") format("woff");
+  src: local("Graphik Light"), local("Graphik-Light"), url("../font/Graphik-Light.woff2") format("woff2"), url("../font/Graphik-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik-Extralight"), url("Graphik-Extralight.woff2") format("woff2"), url("Graphik-Extralight.woff") format("woff");
+  src: local("Graphik-Extralight"), url("../font/Graphik-Extralight.woff2") format("woff2"), url("../font/Graphik-Extralight.woff") format("woff");
   font-weight: 200;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik-Regular"), url("Graphik-Regular.woff2") format("woff2"), url("Graphik-Regular.woff") format("woff");
+  src: local("Graphik-Regular"), url("../font/Graphik-Regular.woff2") format("woff2"), url("../font/Graphik-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik Medium"), local("Graphik-Medium"), url("Graphik-Medium.woff2") format("woff2"), url("Graphik-Medium.woff") format("woff");
+  src: local("Graphik Medium"), local("Graphik-Medium"), url("../font/Graphik-Medium.woff2") format("woff2"), url("../font/Graphik-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik Medium Italic"), local("Graphik-MediumItalic"), url("Graphik-MediumItalic.woff2") format("woff2"), url("Graphik-MediumItalic.woff") format("woff");
+  src: local("Graphik Medium Italic"), local("Graphik-MediumItalic"), url("../font/Graphik-MediumItalic.woff2") format("woff2"), url("../font/Graphik-MediumItalic.woff") format("woff");
   font-weight: 500;
   font-style: italic;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik Regular"), local("Graphik-Regular"), url("Graphik-Regular.woff2") format("woff2"), url("Graphik-Regular.woff") format("woff");
+  src: local("Graphik Regular"), local("Graphik-Regular"), url("../font/Graphik-Regular.woff2") format("woff2"), url("../font/Graphik-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik-Light"), url("Graphik-Light.woff2") format("woff2"), url("Graphik-Light.woff") format("woff");
+  src: local("Graphik-Light"), url("../font/Graphik-Light.woff2") format("woff2"), url("../font/Graphik-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik Light Italic"), local("Graphik-LightItalic"), url("Graphik-LightItalic.woff2") format("woff2"), url("Graphik-LightItalic.woff") format("woff");
+  src: local("Graphik Light Italic"), local("Graphik-LightItalic"), url("../font/Graphik-LightItalic.woff2") format("woff2"), url("../font/Graphik-LightItalic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik-Medium"), url("Graphik-Medium.woff2") format("woff2"), url("Graphik-Medium.woff") format("woff");
+  src: local("Graphik-Medium"), url("../font/Graphik-Medium.woff2") format("woff2"), url("../font/Graphik-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik-Medium"), url("Graphik-Medium.woff2") format("woff2"), url("Graphik-Medium.woff") format("woff");
+  src: local("Graphik-Medium"), url("../font/Graphik-Medium.woff2") format("woff2"), url("../font/Graphik-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik Semibold Italic"), local("Graphik-SemiboldItalic"), url("Graphik-SemiboldItalic.woff2") format("woff2"), url("Graphik-SemiboldItalic.woff") format("woff");
+  src: local("Graphik Semibold Italic"), local("Graphik-SemiboldItalic"), url("../font/Graphik-SemiboldItalic.woff2") format("woff2"), url("../font/Graphik-SemiboldItalic.woff") format("woff");
   font-weight: 600;
   font-style: italic;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik-Semibold"), url("Graphik-Semibold.woff2") format("woff2"), url("Graphik-Semibold.woff") format("woff");
+  src: local("Graphik-Semibold"), url("../font/Graphik-Semibold.woff2") format("woff2"), url("../font/Graphik-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik-Regular"), url("Graphik-Regular.woff2") format("woff2"), url("Graphik-Regular.woff") format("woff");
+  src: local("Graphik-Regular"), url("../font/Graphik-Regular.woff2") format("woff2"), url("../font/Graphik-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik Semibold"), local("Graphik-Semibold"), url("Graphik-Semibold.woff2") format("woff2"), url("Graphik-Semibold.woff") format("woff");
+  src: local("Graphik Semibold"), local("Graphik-Semibold"), url("../font/Graphik-Semibold.woff2") format("woff2"), url("../font/Graphik-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik Regular Italic"), local("Graphik-RegularItalic"), url("Graphik-RegularItalic.woff2") format("woff2"), url("Graphik-RegularItalic.woff") format("woff");
+  src: local("Graphik Regular Italic"), local("Graphik-RegularItalic"), url("../font/Graphik-RegularItalic.woff2") format("woff2"), url("../font/Graphik-RegularItalic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap; }
 
 @font-face {
   font-family: "Graphik";
-  src: local("Graphik-Semibold"), url("Graphik-Semibold.woff2") format("woff2"), url("Graphik-Semibold.woff") format("woff");
+  src: local("Graphik-Semibold"), url("../font/Graphik-Semibold.woff2") format("woff2"), url("../font/Graphik-Semibold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap; }
@@ -952,6 +952,7 @@ body {
   left: 0;
   top: 0;
   width: 100%;
+  margin: 0 auto;
   background-color: #252b42;
   z-index: 5000;
   box-shadow: 0 10px 30px #e6e6e6;
@@ -965,7 +966,7 @@ body {
     .sticky {
       padding: 1rem 4rem; } }
   .sticky a {
-    color: #2091f9; }
+    color: #ffffff; }
     .sticky a:hover {
       opacity: 0.8; }
   .sticky .nav__item a {

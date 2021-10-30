@@ -1,0 +1,100 @@
+@font-face {
+    font-family: 'Gravity Book';
+    src: local('Gravity Book'), local('Gravity-Book'),
+        url('Gravity-Book.woff2') format('woff2'),
+        url('Gravity-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gravity Book';
+    src: local('Gravity Book Italic'), local('Gravity-BookItalic'),
+        url('Gravity-BookItalic.woff2') format('woff2'),
+        url('Gravity-BookItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gravity';
+    src: local('Gravity Bold Italic'), local('Gravity-BoldItalic'),
+        url('Gravity-BoldItalic.woff2') format('woff2'),
+        url('Gravity-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gravity';
+    src: local('Gravity Light'), local('Gravity-Light'),
+        url('Gravity-Light.woff2') format('woff2'),
+        url('Gravity-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gravity';
+    src: local('Gravity Italic'), local('Gravity-Italic'),
+        url('Gravity-Italic.woff2') format('woff2'),
+        url('Gravity-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gravity';
+    src: local('Gravity Bold'), local('Gravity-Bold'),
+        url('Gravity-Bold.woff2') format('woff2'),
+        url('Gravity-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gravity';
+    src: local('Gravity UltraLight Italic'), local('Gravity-UltraLightItalic'),
+        url('Gravity-UltraLightItalic.woff2') format('woff2'),
+        url('Gravity-UltraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gravity';
+    src: local('Gravity Regular'), local('Gravity-Regular'),
+        url('Gravity-Regular.woff2') format('woff2'),
+        url('Gravity-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gravity';
+    src: local('Gravity UltraLight'), local('Gravity-UltraLight'),
+        url('Gravity-UltraLight.woff2') format('woff2'),
+        url('Gravity-UltraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gravity';
+    src: local('Gravity Light Italic'), local('Gravity-LightItalic'),
+        url('Gravity-LightItalic.woff2') format('woff2'),
+        url('Gravity-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
