@@ -608,9 +608,9 @@ body {
       margin-right: 2.1rem; }
     .nav__menu .nav__list .nav__item a {
       color: #ffffff;
-      font-family: Graphik;
+      font-family: "Roboto", sans-serif;
       font-weight: 400;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       line-height: 28px;
       letter-spacing: 0.2px; }
       .nav__menu .nav__list .nav__item a:hover {
@@ -814,9 +814,9 @@ body {
       margin-right: 2.1rem; }
     .nav__menu .nav__list .nav__item a {
       color: #ffffff;
-      font-family: Graphik;
+      font-family: "Roboto", sans-serif;
       font-weight: 400;
-      font-size: 1.5rem;
+      font-size: 1.6rem;
       line-height: 28px;
       letter-spacing: 0.2px; }
       .nav__menu .nav__list .nav__item a:hover {

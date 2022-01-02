@@ -40,10 +40,10 @@
 
         a {
           color: $light-text-color;
-          font-family: Graphik;
+          font-family: $font-roboto;
 
           font-weight: $font-regular;
-          font-size: 1.5rem;
+          font-size: 1.6rem;
           line-height: 28px;
           letter-spacing: 0.2px;
           &:hover {
